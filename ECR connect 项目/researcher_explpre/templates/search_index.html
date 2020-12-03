@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap2.min.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <title>{{ title }}</title>
+</head>
+<body>
+<section class="main">
+<!-- banner -->
+    <div class="container landing-page" style="text-align: center">
+        <div class="row" style="padding-top: 48px">
+            <div class="col-md-10 col-md-offset-1">
+                <img src="./static/img/search_banner.png" style="max-width: 85%;">
+            </div>
+        </div>
+<!-- main text-->
+        <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <form action="/search/" method="get">
+                        <div class="form-group row" style="margin-top: 20px; margin-bottom: 40px">
+                            <div class="input-group col-md-10 col-md-offset-1">
+                                <input class="form-control" placeholder="Search your interests..." name="query" autofocus="autofocus" autocomplete="on" required="required">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" onclick="document.forms[0].submit();return false;">Search</button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+</section>
+</body>
+</html>

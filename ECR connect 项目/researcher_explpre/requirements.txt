@@ -1,0 +1,16 @@
+flask
+flask-bootstrap
+
+pymysql
+
+xml.etree.ElementTree
+re
+stemming.porter2
+nltk.corpus
+copy
+numpy
+
+autocorrect
+requests
+
+wordnet

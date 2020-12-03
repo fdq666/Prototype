@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap2.min.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    <title>Persons content</title>
+</head>
+<body>
+<!-- CONTAINER -->
+    <div class="container">
+        <!-- ROW -->
+        <div class="row">
+            <!-- Main Column -->
+            <div class="col-md-8">
+                <!-- PERSON POST -->
+                <h1>{{persons[1]}}</h1>
+                <ul>
+                    <li> {{persons[2]}}</li>
+                    <li>{{persons[3]}}</li>
+                </ul>
+                <!-- /PERSON POST -->
+            </div>
+        </div>
+    </div>
+<!-- /Main Column -->
+</body>
+</html>
